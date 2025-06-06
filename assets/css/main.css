@@ -748,6 +748,7 @@ section,
 
 .hero .hero-content h1 .accent-text {
   color: var(--accent-color);
+  font-size: 1.5rem;
 }
 
 @media (max-width: 992px) {
