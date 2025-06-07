@@ -6,12 +6,15 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>ماجيك سيرفس - Magic Services</title>
   <meta name="description"
-    content="شركه مصريه لمكافحه الحشرات الطائره - الزاحفه - البق - النمل - سوس الخشب رائده في المجال ">
-  <meta name="keywords" content="مكافحه حشرات , مكافحه النمل , مكافحه البق , مكافحه سوس الخشب , مكافحه القوارض ">
+    content=" - شركة مكافحة حشرات تقدم أفضل خدمات مكافحة الفئران، الصراصير، الذباب، البق والسوس بجودة عالية وأسعار مناسبة - شركه مصريه لمكافحه الحشرات الطائره - الزاحفه - البق - النمل - سوس الخشب رائده في المجال ">
+  <meta name="keywords"
+    content="  مكافحة الناموس  , مكافحه العفن , مكافحه الحشرات , البراغيث ,الثعابين , مكافحه حشرات , مكافحه النمل , مكافحه البق , مكافحه سوس الخشب , مكافحه القوارض ">
+
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -21,14 +24,35 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <!-- Preload Vendor CSS Files -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Preload Main CSS File -->
+  <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Fallback in case JS is disabled -->
+  <noscript>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </noscript>
 
   <!-- =======================================================
   * Template Name: Magic Services for Environmental Services and Pest Control
@@ -57,25 +81,19 @@
           <li><a href="#about">من نحن </a></li>
           <li><a href="#features">سابقه الاعمال</a></li>
           <li><a href="#services">خدماتنا</a></li>
-          <!-- <li><a href="#pricing">Pricing</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
+
+
+          
           <li><a href="#contact">تواصل معنا</a></li>
+          <li class="dropdown"><a href="#"><Span>مقالات</Span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="./pages/rats.html" target="_blank">مكافحه قوارض</a></li>
+              <li><a href="./pages/coch.html" target="_blank">مكافحه حشرات زاحفه</a></li>
+              <li><a href="./pages/bbug.html" target="_blank">مكافحه البق</a></li>
+              <li><a href="./pages/mosq.html" target="_blank">مكافحه الحشرات الطائره</a></li>
+              <li><a href="./pages/Ants.html" target="_blank">مكافحه النمل</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -281,12 +299,12 @@
 
       <div class="container">
 
-        <div class="d-flex justify-content-center tabs">
+        <div class="d-flex justify-content-center tabs" id="choose-sector">
 
           <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
 
             <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <a class="nav-link active show" data-bs-toggle="tab" datafeatures">
                 <h4>القطاع الطبي</h4>
               </a>
             </li><!-- End tab nav item -->
@@ -875,7 +893,7 @@
             </div>
           </div><!-- End testimonial item -->
 
-          
+
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-item">
               <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -887,10 +905,13 @@
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>"نعاني في مركزنا الطبي من مشكلة تكرار ظهور الناموس داخل بعض العيادات والممرات، وهو أمر غير مقبول إطلاقًا في بيئة صحية تتطلب أعلى معايير النظافة.
-بعد تواصلنا مع شركة [ماجيك سيرفس ]، تم إرسال فريق مختص فورًا، قاموا بالمعاينة وتحديد مصادر المشكلة بدقة، ثم استخدموا نظام رش ضبابي داخلي وخارجي بمبيدات فعالة وآمنة على المرضى والكوادر الطبية.
-خلال 24 ساعة فقط، لاحظنا اختفاء الناموس بشكل شبه كامل، واستمرت النتائج بعد عدة أيام بنفس الفعالية.
-نشكرهم على سرعة الاستجابة، المهنية العالية، واستخدامهم مواد مرخصة من وزارة الصحة، ونوصي بخدماتهم لأي منشأة صحية تبحث عن حلول جذرية وآمنة."
+                <span>"نعاني في مركزنا الطبي من مشكلة تكرار ظهور الناموس داخل بعض العيادات والممرات، وهو أمر غير مقبول
+                  إطلاقًا في بيئة صحية تتطلب أعلى معايير النظافة.
+                  بعد تواصلنا مع شركة [ماجيك سيرفس ]، تم إرسال فريق مختص فورًا، قاموا بالمعاينة وتحديد مصادر المشكلة
+                  بدقة، ثم استخدموا نظام رش ضبابي داخلي وخارجي بمبيدات فعالة وآمنة على المرضى والكوادر الطبية.
+                  خلال 24 ساعة فقط، لاحظنا اختفاء الناموس بشكل شبه كامل، واستمرت النتائج بعد عدة أيام بنفس الفعالية.
+                  نشكرهم على سرعة الاستجابة، المهنية العالية، واستخدامهم مواد مرخصة من وزارة الصحة، ونوصي بخدماتهم لأي
+                  منشأة صحية تبحث عن حلول جذرية وآمنة."
 
                 </span>
                 <i class="bi bi-quote quote-icon-right"></i>
@@ -1194,9 +1215,9 @@
           <h4 class="info">روابط سريعه</h4>
           <ul>
             <li class="info"><a href="#">الرئيسيه</a></li>
-            <li class="info"><a href="#">من نحن </a></li>
-            <li class="info"><a href="#">خدماتنا</a></li>
-            <li class="info"><a href="#">تواصل معنا</a></li>
+            <li class="info"><a href="#about">من نحن </a></li>
+            <li class="info"><a href="#features">خدماتنا</a></li>
+            <li class="info"><a href="#contact">تواصل معنا</a></li>
 
           </ul>
         </div>
@@ -1204,22 +1225,24 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4 class="info">خدماتنا</h4>
           <ul>
-            <li><a href="#">مكافحه قوارض</a></li>
-            <li><a href="#">مكافحه حشرات زاحفه</a></li>
-            <li><a href="#">مكافحه البق</a></li>
-            <li><a href="#">مكافحه الحشرات الطائره</a></li>
-            <li><a href="#">مكافحه النمل</a></li>
+            <li><a href="./pages/rats.html" target="_blank">مكافحه قوارض</a></li>
+            <li><a href="./pages/coch.html" target="_blank">مكافحه حشرات زاحفه</a></li>
+            <li><a href="./pages/bbug.html" target="_blank">مكافحه البق</a></li>
+            <li><a href="./pages/mosq.html" target="_blank">مكافحه الحشرات الطائره</a></li>
+            <li><a href="./pages/Ants.html" target="_blank">مكافحه النمل</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4 class="info">سابقه الاعمال </h4>
           <ul>
-            <li><a href="#">القطاع الطبي </a></li>
-            <li><a href="#">شركات و مصانع </a></li>
-            <li><a href="#">القطاع السياحي و الفنادق</a></li>
-            <li><a href="#">القطاع الغذائي و المطاعم </a></li>
-            <li><a href="#">مراكز التجميل </a></li>
+            <li><a href="#choose-sector">القطاع الطبي </a></li>
+            <li><a href="#choose-sector">شركات و مصانع </a></li>
+            <li><a href="#choose-sector">القطاع السياحي و الفنادق</a></li>
+            <li><a href="#choose-sector">القطاع الغذائي و المطاعم </a></li>
+            <li><a href="#choose-sector">القطاع المالي </a></li>
+            <li><a href="#choose-sector">مراكز التجميل </a></li>
+            <li><a href="#choose-sector"> الشركات والهيئات </a></li>
           </ul>
         </div>
 

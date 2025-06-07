@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="مكافحة بق الفراش بطرق فعالة وآمنة. تخلص من حشرة البق نهائيًا مع فريق متخصص في [اسم المدينة]" />
+  <title>مكافحة البق | خدمة التخلص من بق الفراش</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" />
+  <style>
+    /* أساسي */
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #d35400;
+      margin-bottom: 15px;
+    }
+    /* كروت */
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+      overflow: hidden;
+    }
+    /* الصور */
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card img:hover {
+      transform: scale(1.05);
+    }
+    /* القوائم */
+    ul {
+      list-style-type: disc;
+      padding-right: 20px;
+      margin-top: 0;
+    }
+    /* الزر */
+    .btn-contact {
+      display: inline-block;
+      background-color: #e67e22;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .btn-contact:hover {
+      background-color: #d35400;
+    }
+    /* الفوتر */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ecf0f1;
+      color: #666;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* نافذة التواصل (البوب اب) */
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .popup-content {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      position: relative;
+      font-size: 1rem;
+    }
+    .popup-content h3 {
+      margin-top: 0;
+      color: #d35400;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .popup-content input,
+    .popup-content textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Cairo', sans-serif;
+      resize: vertical;
+    }
+    .popup-content button {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .popup-content button:hover {
+      background-color: #e67e22;
+    }
+    .popup-close {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 1.5rem;
+      color: #d35400;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>مكافحة البق</h1>
+
+    <div class="card">
+      <h2>ما هو بق الفراش ولماذا هو خطر؟</h2>
+      <p>بق الفراش هو حشرة صغيرة تتغذى على دم الإنسان أثناء النوم، وتسبب حكة واحمرارًا مزعجًا. وجوده يدل على مشكلة تحتاج إلى معالجة فورية.</p>
+      <!-- <img src="https://cdn.pixabay.com/photo/2017/06/05/20/47/bedbug-2372996_960_720.jpg" alt="بق الفراش" /> -->
+    </div>
+
+    <div class="card">
+      <h2>علامات وجود البق</h2>
+      <ul>
+        <li>لدغات جلدية على شكل خطوط أو تجمعات.</li>
+        <li>رؤية بقع دم أو نقاط سوداء على المفروشات.</li>
+        <li>رائحة كريهة في الغرف المصابة.</li>
+        <li>رؤية الحشرة أو بيوضها في زوايا السرير.</li>
+      </ul>
+      <!-- <img src="https://cdn.pixabay.com/photo/2016/06/07/18/25/bed-bug-1442357_960_720.jpg" alt="علامات وجود البق" /> -->
+    </div>
+
+    <div class="card">
+      <h2>خطواتنا في مكافحة البق</h2>
+      <ul>
+        <li>فحص دقيق لجميع الأماكن المشتبه بها.</li>
+        <li>استخدام مبيدات حرارية وكيميائية متخصصة.</li>
+        <li>تعقيم المفروشات والمراتب.</li>
+        <li>متابعة دورية للتأكد من القضاء الكامل.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>مميزات خدمتنا</h2>
+      <ul>
+        <li>تقنيات حديثة وآمنة تمامًا.</li>
+        <li>فريق فني مدرب ومتخصص في مكافحة البق.</li>
+        <li>نتائج مضمونة في أقصر وقت.</li>
+        <li>خدمة مناسبة للمنازل والفنادق والمستشفيات.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>نصائح للوقاية من البق</h2>
+      <ul>
+        <li>تنظيف المراتب والأثاث بانتظام.</li>
+        <li>تجنب شراء الأثاث المستعمل دون فحص.</li>
+        <li>التهوية الجيدة واستخدام الشمس لتعقيم الأغطية.</li>
+        <li>فحص الحقائب بعد السفر.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <button class="btn-contact" id="openPopupBtn">📞 اتصل بنا الآن</button>
+      <p style="margin-top: 10px; font-weight: bold; color: #d35400;">💬 دعم متواصل 24/7 لخدمتكم</p>
+    </div>
+  </div>
+
+  <!-- نافذة النموذج المنبثقة -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <span class="popup-close" id="closePopupBtn" title="إغلاق">&times;</span>
+      <h3 id="popupTitle">تواصل معنا</h3>
+      <form id="contactForm">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required placeholder="ادخل اسمك" />
+        
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="ادخل رقم هاتفك" />
+
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
+  </div>
+
+ <footer>
+
+    <div class="credits">
+      &copy; 2025 مكافحة النمل | جميع الحقوق محفوظة
+      <span style="font-weight: bold ;">لشركه ماجيك سيرفس </span> <br>
+      Designed by <a href="https://linkedin.com/in/maged-atef-arteen" target="_blank">Eng. Maged Atef</a> ,Get in
+      Touch <a href="mailto:maged.atef.arteen@gmail.com" target="_blank">E-mail</a>
+    </div>
+  </footer>
+
+
+  <script>
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const contactForm = document.getElementById('contactForm');
+
+    // فتح النافذة
+    openPopupBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'flex';
+    });
+
+    // إغلاق النافذة
+    closePopupBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'none';
+    });
+
+    // إغلاق النافذة عند الضغط خارج المحتوى
+    popupOverlay.addEventListener('click', (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.style.display = 'none';
+      }
+    });
+
+    // معالجة إرسال النموذج (مثال فقط، هنا ممكن تضيف كود إرسال حقيقي)
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('شكرًا لتواصلك معنا! سنعاود الاتصال بك قريبًا.');
+      contactForm.reset();
+      popupOverlay.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

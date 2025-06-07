@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقات الحشرات</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background-color: white;
+      width: 180px;
+      height: 220px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      padding: 15px;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <h1>أنواع الحشرات</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="الحشرات الزاحفة">
+      <h3>الحشرات الزاحفة</h3>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="الحشرات الطائرة">
+      <h3>الحشرات الطائرة</h3>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4543/4543780.png" alt="البق">
+      <h3>البق</h3>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4543/4543849.png" alt="السوس">
+      <h3>السوس</h3>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="خدمة مكافحة الحشرات الزاحفة بطرق آمنة وفعالة. تخلص من الصراصير والنمل وغيرها من الحشرات الزاحفة مع فريق متخصص في [اسم المدينة]" />
+  <title>مكافحة الحشرات الزاحفة | التخلص من الصراصير والنمل وغيرها</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" />
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #d35400;
+      margin-bottom: 15px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+      overflow: hidden;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card img:hover {
+      transform: scale(1.05);
+    }
+    ul {
+      list-style-type: disc;
+      padding-right: 20px;
+      margin-top: 0;
+    }
+    .btn-contact {
+      display: inline-block;
+      background-color: #e67e22;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .btn-contact:hover {
+      background-color: #d35400;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ecf0f1;
+      color: #666;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .popup-content {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      position: relative;
+      font-size: 1rem;
+    }
+    .popup-content h3 {
+      margin-top: 0;
+      color: #d35400;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .popup-content input,
+    .popup-content textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Cairo', sans-serif;
+      resize: vertical;
+    }
+    .popup-content button {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .popup-content button:hover {
+      background-color: #e67e22;
+    }
+    .popup-close {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 1.5rem;
+      color: #d35400;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>مكافحة الحشرات الزاحفة</h1>
+
+    <div class="card">
+      <h2>ما هي الحشرات الزاحفة ولماذا تحتاج إلى مكافحتها؟</h2>
+      <p>الحشرات الزاحفة مثل الصراصير والنمل تعد من أكثر الآفات المزعجة التي تؤثر على صحة الإنسان وسلامة المنازل. تواجدها قد يؤدي إلى نقل أمراض وتلف الأثاث والمخزون الغذائي.</p>
+      <!-- <img src="https://cdn.pixabay.com/photo/2016/03/31/18/36/cockroach-1291986_960_720.jpg" alt="حشرات زاحفة" /> -->
+    </div>
+
+    <div class="card">
+      <h2>علامات وجود الحشرات الزاحفة</h2>
+      <ul>
+        <li>رؤية الحشرات نفسها أو آثارها مثل البيوض والفضلات.</li>
+        <li>روائح كريهة صادرة من أماكن تواجدها.</li>
+        <li>أضرار واضحة على الأثاث والمواد المخزنة.</li>
+        <li>صوت حركة في المناطق المظلمة والرطبة.</li>
+      </ul>
+      <!-- <img src="https://cdn.pixabay.com/photo/2016/11/29/05/03/ants-1866524_960_720.jpg" alt="آثار الحشرات الزاحفة" /> -->
+    </div>
+
+    <div class="card">
+      <h2>خطواتنا في مكافحة الحشرات الزاحفة</h2>
+      <ul>
+        <li>فحص دقيق لجميع الزوايا والمناطق المحتملة.</li>
+        <li>استخدام مبيدات ومصائد متخصصة وآمنة.</li>
+        <li>تنظيف المناطق المتأثرة بشكل دوري.</li>
+        <li>توفير حلول وقائية للحفاظ على نظافة المكان.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>مميزات خدمتنا</h2>
+      <ul>
+        <li>فريق متخصص مدرب بأحدث التقنيات.</li>
+        <li>استخدام مواد آمنة للأطفال والحيوانات الأليفة.</li>
+        <li>نتائج مضمونة وسريعة.</li>
+        <li>خدمة لجميع أنواع المباني والمخازن.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>نصائح للوقاية من الحشرات الزاحفة</h2>
+      <ul>
+        <li>حفظ الطعام في عبوات محكمة الغلق.</li>
+        <li>تنظيف الأسطح والأرضيات بانتظام.</li>
+        <li>سد الشقوق والفجوات في الجدران.</li>
+        <li>التخلص من القمامة بانتظام وعدم تركها مفتوحة.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <button class="btn-contact" id="openPopupBtn">📞 اتصل بنا الآن</button>
+      <p style="margin-top: 10px; font-weight: bold; color: #d35400;">💬 دعم متواصل 24/7 لخدمتكم</p>
+    </div>
+
+  </div>
+
+  <!-- نافذة النموذج المنبثقة -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <span class="popup-close" id="closePopupBtn" title="إغلاق">&times;</span>
+      <h3 id="popupTitle">تواصل معنا</h3>
+      <form id="contactForm">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required placeholder="ادخل اسمك" />
+        
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="ادخل رقم هاتفك" />
+
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
+  </div>
+ <footer>
+
+    <div class="credits">
+      &copy; 2025 مكافحة النمل | جميع الحقوق محفوظة
+      <span style="font-weight: bold ;">لشركه ماجيك سيرفس </span> <br>
+      Designed by <a href="https://linkedin.com/in/maged-atef-arteen" target="_blank">Eng. Maged Atef</a> ,Get in
+      Touch <a href="mailto:maged.atef.arteen@gmail.com" target="_blank">E-mail</a>
+    </div>
+  </footer>
+
+  <script>
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const contactForm = document.getElementById('contactForm');
+
+    openPopupBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'flex';
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'none';
+    });
+
+    popupOverlay.addEventListener('click', (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.style.display = 'none';
+      }
+    });
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('شكرًا لتواصلك معنا! سنعاود الاتصال بك قريبًا.');
+      contactForm.reset();
+      popupOverlay.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
