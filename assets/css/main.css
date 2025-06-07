@@ -1235,12 +1235,17 @@ section,
 .features .tab-content {
   margin-top: 30px;
   /* background-color: red; */
-  overflow-X: scroll;
+
   max-height: 60vh;
-  width: 100%;
+ 
 
 }
 
+.features .tab-content .div{ 
+   overflow: scroll;
+  height: 60vh;
+   /* background-color: red; */
+}
 .features .tab-pane h3 {
   color: var(--heading-color);
   font-weight: 700;
