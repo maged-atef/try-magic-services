@@ -175,3 +175,21 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+//send emails from client to Customer Services 
+(function () {
+    emailjs.init("service_ntglbok"); // Replace with your actual User ID from EmailJS
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_ntglbok", "template_ywol3lz", this)
+      .then(() => {
+        alert("Email sent successfully!");
+        this.reset();
+      }, (error) => {
+        alert("Failed to send email. Error: " + JSON.stringify(error));
+      });
+  });
