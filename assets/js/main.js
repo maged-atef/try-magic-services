@@ -173,7 +173,7 @@
 
 //send emails from client to Customer Services 
 (function () {
-    emailjs.init("service_ntglbok"); // Replace with your actual User ID from EmailJS
+    emailjs.init("N8jN398IHqroRm6U6"); // Replace with your actual User ID from EmailJS
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -181,7 +181,7 @@
 
     console.log("hay")
 
-    emailjs.sendForm("service_ntglbok", "template_ywol3lz", this)
+    emailjs.sendForm("service_0aa7beo", "template_8pjt1zi", this)
       .then(() => {
         alert("Email sent successfully!");
         this.reset();
