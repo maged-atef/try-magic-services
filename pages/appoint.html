@@ -2,24 +2,28 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>حجز ميعاد - ماجيك سيرفس</title>
 
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Google Fonts (اختياري) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-<!-- EmailJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <style>
-    *{
-        box-sizing: border-box;
+    * {
+      box-sizing: border-box;
     }
+
     body {
       font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
       margin: 0;
       padding: 0;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
     }
 
     /* رأس الصفحة */
@@ -44,48 +48,53 @@
 
     /* قسم المميزات */
     .features {
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background-color: #f9fbfd;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
 
     .features h3 {
       margin-bottom: 15px;
       color: #007bff;
+      font-size: 20px;
     }
 
     .features ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .features li {
       margin-bottom: 10px;
       font-size: 16px;
+      display: flex;
+      align-items: center;
     }
 
     .features li i {
       color: #28a745;
-      margin-left: 8px;
+      margin-left: 10px;
     }
 
     /* نموذج الحجز */
     .container {
-      max-width: 500px;
+      max-width: 900px;
       margin: 30px auto;
-      background-color: white;
+      background-color: #ffffff;
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       text-align: center;
       color: #007bff;
       margin-bottom: 25px;
+      font-size: 24px;
     }
 
     .form-group {
@@ -114,12 +123,18 @@
       resize: vertical;
     }
 
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
     button {
       width: 100%;
       background-color: #007bff;
       color: white;
       border: none;
-      padding: 12px;
+      padding: 14px;
       font-size: 16px;
       border-radius: 8px;
       cursor: pointer;
@@ -130,51 +145,63 @@
       background-color: #0056b3;
     }
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
+    /* استجابة للموبايل */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header img {
+        margin-top: 10px;
+        height: 50px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 15px;
+      }
     }
-@media  (max-width: 768px){
-  .container{
-    width: 100%;
-  }
-  #contact-form{
-    width: 100%;
-  }
-}
   </style>
 </head>
+
 <body>
 
   <!-- رأس الصفحة -->
   <div class="header">
     <h1>ماجيك سيرفس</h1>
-    <!-- لوجو الشركة -->
-    <img src="../assets/img/favicon.png" class="w-100" alt="لوجو ماجيك سيرفر">
+    <img src="../assets/img/favicon.png" alt="لوجو ماجيك سيرفس">
   </div>
 
   <!-- مميزات الشركة -->
   <div class="features">
-    <h3><i class="fa-solid fa-star"></i> مميزات ماجيك سيرفر:</h3>
+    <h3><i class="fa-solid fa-star"></i> مميزات ماجيك سيرفس:</h3>
     <ul>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> دعم فني على مدار الساعة</li>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> فنيون متخصصون في المكافحه الحشرات - الفئران</li>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> أمان وحماية للصحه العامه و الحيوانات الاليفه </li>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> أسعار تنافسية وخطط متنوعة</li>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> اكثر من 20 عام خبره في المكافحه   </li>
-      <li><i class="fa-solid fa-check-circle mx-3"></i> نخدم جميع المحافظات - ضمان سنه   </li>
+      <li><i class="fa-solid fa-check-circle"></i> دعم فني على مدار الساعة</li>
+      <li><i class="fa-solid fa-check-circle"></i> فنيون متخصصون في مكافحة الحشرات والفئران</li>
+      <li><i class="fa-solid fa-check-circle"></i> أمان للصحة العامة والحيوانات الأليفة</li>
+      <li><i class="fa-solid fa-check-circle"></i> أسعار تنافسية وخطط متنوعة</li>
+      <li><i class="fa-solid fa-check-circle"></i> أكثر من 20 سنة خبرة</li>
+      <li><i class="fa-solid fa-check-circle"></i> نخدم جميع المحافظات - ضمان سنة</li>
     </ul>
   </div>
 
-  <!-- نموذج حجز الميعاد -->
+  <!-- نموذج الحجز -->
   <div class="container">
     <h2><i class="fa-solid fa-calendar-check"></i> حجز ميعاد</h2>
     <form id="contact-form">
       <div class="form-group">
         <label for="name">الاسم الكامل</label>
         <i class="fa-solid fa-user"></i>
-        <input type="text" id="name" name="customer_name" required >
+        <input type="text" id="name" name="customer_name" required>
       </div>
 
       <div class="form-group">
@@ -189,9 +216,6 @@
         <input type="tel" id="phone" name="mobile" required>
       </div>
 
-      
-
-  
       <div class="form-group">
         <label for="notes">ملاحظات إضافية</label>
         <i class="fa-solid fa-pen"></i>
@@ -201,6 +225,8 @@
       <button type="submit"><i class="fa-solid fa-paper-plane"></i> احجز الآن</button>
     </form>
   </div>
+
+  <!-- ملف الجافاسكريبت لإرسال النموذج -->
   <script src="../assets/js/sendmail.js"></script>
 </body>
 </html>
