@@ -7,6 +7,8 @@
   <title>مكافحة الفئران | التخلص من الفئران نهائيًا</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" />
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <style>
     /* أساسي */
     body {
@@ -212,17 +214,17 @@
     <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
       <span class="popup-close" id="closePopupBtn" title="إغلاق">&times;</span>
       <h3 id="popupTitle">تواصل معنا</h3>
-      <form id="contactForm">
+      <form id="contact-form">
         <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required placeholder="ادخل اسمك" />
+        <input type="text" id="name" name="customer_mail" required placeholder="ادخل اسمك" />
         
         <label for="phone">رقم الهاتف:</label>
-        <input type="tel" id="phone" name="phone" required placeholder="ادخل رقم هاتفك" />
+        <input type="tel" id="phone" name="mobile" required placeholder="ادخل رقم هاتفك" />
 
         <label for="message">رسالتك:</label>
-        <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+        <textarea id="message" name="complain" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
 
-        <button type="submit">إرسال</button>
+        <button type="submit" id="sendmail">إرسال</button>
       </form>
     </div>
   </div>
@@ -268,5 +270,7 @@
       popupOverlay.style.display = 'none';
     });
   </script>
+    <!-- Main JS File -->
+  <script src="../assets/js/sendmail.js"></script>
 </body>
 </html>
