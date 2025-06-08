@@ -1,10 +1,4 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -184,6 +178,8 @@
 
   document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
+
+    console.log("hay")
 
     emailjs.sendForm("service_ntglbok", "template_ywol3lz", this)
       .then(() => {

@@ -54,6 +54,8 @@
     <link href="assets/css/main.css" rel="stylesheet">
   </noscript>
 
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- =======================================================
   * Template Name: Magic Services for Environmental Services and Pest Control
   * Template URL:github
@@ -1145,7 +1147,7 @@
               <p class="ifno">فريق الدعم الخاص سوف يتواصل معك في اسرع وقت لحل مشكلتك </p>
 
               <form  class="php-email-form" data-aos="fade-up"
-                data-aos-delay="200" id="contact-form" >
+                data-aos-delay="200" id="contact-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
@@ -1153,7 +1155,7 @@
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="بريدك الخاص" required="">
+                    <input type="email" class="form-control" name="customer_mail" placeholder="بريدك الخاص" required="">
                   </div>
 
                   <div class="col-12">
@@ -1162,7 +1164,7 @@
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="اترك رسالتك"
+                    <textarea class="form-control" name="complain" rows="6" placeholder="اترك رسالتك"
                       required=""></textarea>
                   </div>
 
@@ -1171,10 +1173,11 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">ارسال</button>
+                    <button  class="btn" id="sendmail">ارسال</button>
                   </div>
 
                 </div>
+                
               </form>
 
             </div>
@@ -1271,14 +1274,14 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" ></script>
 
 </body>
 
