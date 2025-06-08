@@ -830,6 +830,7 @@ section,
 
 .hero .customers-badge {
   position: absolute;
+ 
   bottom: -80px;
   right: 30px;
   background-color: var(--surface-color);
